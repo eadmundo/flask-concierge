@@ -1,0 +1,6 @@
+<form method="POST" action="">
+    {{ form.csrf_token }}
+    <p>{{ form.passphrase.label }} {{ form.passphrase(size=50) }}</p>
+    <p>{{ form.confirm_passphrase.label }} {{ form.confirm_passphrase(size=50) }}</p>
+    <input type="submit" value="submit">
+</form>

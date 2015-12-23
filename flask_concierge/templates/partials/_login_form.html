@@ -1,0 +1,6 @@
+<form method="POST" action="">
+    {{ form.csrf_token }}
+    <p>{{ form.username.label }} {{ form.username(size=50) }}</p>
+    <p>{{ form.passphrase.label }} {{ form.passphrase(size=50) }}</p>
+    <input type="submit" value="login">
+</form>
